@@ -583,7 +583,7 @@ header {
 /* SKILLS */
 
 #skills {
-	display:none;
+
 	background-color:#2F4254;
 	padding:30px 0;
 }
@@ -1098,7 +1098,7 @@ blockquote footer {
 ------------------------------*/
 
 #testimonials {
-	background-color:#16A085;
+	background-color:#34495E;
 }
 
 #testimonials .media {
@@ -1132,7 +1132,7 @@ blockquote footer {
 	font-weight:bold;
 	font-style:italic;
 	font-size:14px;
-	color:#333;
+	color:#1ABC9C;
 }
 
 #testimonials .media .media-body p {
@@ -1151,6 +1151,7 @@ blockquote footer {
 #contact {
 	color:#333333;
 	text-align:center;
+	background: #1ABC9C
 }
 
 #contact .contact-alert .alert {
@@ -1201,18 +1202,22 @@ blockquote footer {
 }
 
 #contact .contact-info {
-	background-color:#1ABC9C;
-	border-radius:5px;
+	background: url(https://scontent-mia1-2.xx.fbcdn.net/v/t1.0-9/40067_148695635147154_3045279_n.jpg?oh=4aef6fce0cdebdbf2ca57d2de2a99a91&oe=594768E2)center center no-repeat;
+  background-size: cover;
+	filter: grayscale(4) drop-shadow(16px 16px 10px rgba(0,0,0,0.9)) ;
+	/*background-color:#16A085;*/
+	border-radius:15px;
 	color:#FFFFFF;
 	padding:0 12px;
-	text-align:left;
+
 }
 
 #contact .contact-info p {
-	border-bottom:2px dashed #16A085;
+	/*border-bottom:2px dashed #16A085;*/
 	margin:0;
 	padding:12px 0;
 	font-weight:bold;
+	text-shadow: 1px 1px 2px black;
 }
 
 #contact .contact-info p:last-child {
@@ -1222,6 +1227,7 @@ blockquote footer {
 .contact-image {
 	width:164px;
 	padding-bottom:15px;
+	border-radius: 50%;
 }
 
 #contact .controls {
@@ -1642,6 +1648,8 @@ blockquote footer {
 
 	#contact .contact-info {
 		margin-top:35px;
+
+
 	}
 
 	.btn-footer {
@@ -1824,3 +1832,26 @@ blockquote footer {
  #pricing {
 	 display: none;
  }
+
+#blog {
+	display: none;
+}
+.thingy {
+position: absolute;
+left: 0;
+top: 0;
+height: 3rem;
+
+}
+
+.thingy:hover {
+	color: red;
+	background: #16A085;
+}
+.email-span {
+	color: white;
+	display: inline-block;
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
