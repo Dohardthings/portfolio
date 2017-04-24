@@ -388,7 +388,7 @@ h4 {
 .navbar-default .navbar-brand {
 	font-family:'Montserrat';
 	padding:23px 0 0 25px;
-	color:#16A085;
+	color:white;
 	font-size:24px;
 	transition-duration:0.7s;
 }
@@ -805,6 +805,8 @@ blockquote footer {
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .grid li {
@@ -814,6 +816,7 @@ blockquote footer {
 	padding: 20px;
 	text-align: left;
 	position: relative;
+
 }
 
 .grid figure {
@@ -857,6 +860,7 @@ blockquote footer {
 
 /* Caption Style 4 */
 .cs-style-4 li {
+	flex-basis: 50%;
 	-webkit-perspective: 1700px;
 	-moz-perspective: 1700px;
 	perspective: 1700px;
@@ -1810,13 +1814,21 @@ blockquote footer {
 .header-image {
 	border-radius: 50%;
 	transform: rotate(90deg);
-	margin-top: 1.3rem;
+	margin-top: .7rem;
     padding: 0;
+		height: 5rem;
+	width: 5rem;
+	object-fit: cover;
+
 }
 
 .top-image{
 	border-radius: 50%;
     margin-bottom: 4rem;
+		height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+
 }
 .social-stuff {
 	margin-top: 5rem;
@@ -1849,9 +1861,20 @@ height: 3rem;
 	background: #16A085;
 }
 .email-span {
-	color: white;
+	color: #16A085;
 	display: inline-block;
     text-align: center;
     margin-top: 2.5rem;
     margin-left: 2rem;
 }
+.margin-bottom-1 {
+	margin-bottom: -2rem;
+}
+.hidden {
+overflow: hidden;
+}
+@media (max-width: 767px) {
+.jumbotron img {
+    max-height: 150px;
+    max-width: 150px;
+	}
