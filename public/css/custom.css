@@ -1804,7 +1804,7 @@ blockquote footer {
 	}
 }
 .image-container {
-	background: red;
+
 	margin: auto;
     transform: rotate(90deg);
     width: 20%;
@@ -1820,6 +1820,12 @@ blockquote footer {
 	width: 5rem;
 	object-fit: cover;
 
+}
+
+@media (max-width: 767px) {
+	.header-image {
+		transform: rotate(0deg);
+	}
 }
 
 .top-image{
@@ -1878,3 +1884,7 @@ overflow: hidden;
     max-height: 150px;
     max-width: 150px;
 	}
+ .top-image {
+	 transform: rotate(270deg);
+ }
+}
